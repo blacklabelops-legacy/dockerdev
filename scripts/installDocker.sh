@@ -7,6 +7,3 @@ sudo yum -y install docker docker-registry
 sudo systemctl enable docker.service
 sudo systemctl start docker.service
 sudo systemctl status docker.service
-
-# Download a Docker Container
-sudo docker pull centos
