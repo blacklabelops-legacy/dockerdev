@@ -2,16 +2,6 @@
 
 Vagrantfile for a Docker development environment.
 
-## Use Published Box
-
-~~~~
-$ vagrant init blacklabelops/docker
-$ vagrant up
-$ vagrant ssh
-~~~~    
-
-> This will download the tagged box from Atlas and start a new Vagrant box.
-
 ## Build and Use Box
 
 ~~~~
@@ -35,6 +25,5 @@ $ vagrant ssh
 
 * [Box Homepage](https://atlas.hashicorp.com/blacklabelops/boxes/docker)
 * [Vagrant Homepage](https://www.vagrantup.com/)
-* [Atlas Homepage](https://atlas.hashicorp.com)
 
 
