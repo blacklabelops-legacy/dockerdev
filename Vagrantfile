@@ -3,9 +3,8 @@
 
 Vagrant.configure(2) do |config|
   
-  config.vm.box = "chef/centos-7.0"
-
-  #
+  config.vm.box = "blacklabelops/centos-7.0"
+  
   config.vm.provider "virtualbox" do |vb|
   	# Display the VirtualBox GUI when booting the machine
     vb.gui = false
@@ -14,7 +13,6 @@ Vagrant.configure(2) do |config|
     vb.memory = "2048"
   end
   
-  config.vm.provision "shell", inline: "sudo yum -y update"
   config.vm.provision "shell", path: "scripts/installDocker.sh"
   config.vm.provision "shell", path: "scripts/upgradeDocker.sh"
   config.vm.provision "shell", path: "scripts/installDockerCompose.sh"
