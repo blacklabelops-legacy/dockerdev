@@ -3,7 +3,7 @@
 
 Vagrant.configure(2) do |config|
   
-  config.vm.box = "blacklabelops/centos-7.0"
+  config.vm.box = "blacklabelops/centos"
   
   config.vm.provider "virtualbox" do |vb|
   	# Display the VirtualBox GUI when booting the machine
