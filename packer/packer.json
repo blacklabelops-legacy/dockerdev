@@ -1,0 +1,31 @@
+{
+  "builders": [
+    {
+  		"type": "virtualbox-ovf",
+  		"source_path": "Redistribution.ovf",
+  		"ssh_username": "vagrant",
+  		"ssh_password": "vagrant",
+  		"ssh_wait_timeout": "10000s",
+  		"headless": true,
+  		"vm_name": "DockerDev",
+  		"vboxmanage": [
+    		["modifyvm", "{{.Name}}", "--memory", "2048"],
+    		["modifyvm", "{{.Name}}", "--cpus", "2"]
+  		],
+  		"shutdown_command": "echo 'packer' | sudo -S shutdown -P now"
+	  }
+  ],
+  "provisioners": [
+		{
+  			"type": "shell",
+  			"script": "packer/putInsecureKey.sh"
+		}
+  ],
+  "post-processors": [
+    {
+  		"type":               "vagrant",
+  		"compression_level":  9,
+      "output":             "vagrant-dockerdev.box"
+	  }
+  ]
+}
