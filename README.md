@@ -48,7 +48,7 @@ $ ./packer/redistribute.sh
 Afterwards I use Packer to replace the default Vagrant insecure key and repackage it as a Vagrant box.
 
 ~~~~
-$ ./packer/redistribute.sh
+$ packer build packer/packer.json
 ~~~~ 
 
 Test the box before you spread it among your friends!
