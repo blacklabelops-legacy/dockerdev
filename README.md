@@ -61,7 +61,7 @@ Read the Atlas section on how to spread the box from the cloud!
 
 ## Atlas
 
-This project includes scripts for uploading and managing the box on [Atlas](https://atlas.hashicorp.com/) (folder atlas/). The scripts are described in this [Tutorial](/tutorials/versioningWithAtlas.md).
+This project includes scripts for uploading and managing the box on [Atlas](https://atlas.hashicorp.com/) (folder atlas/). The scripts are described in this [Tutorial](https://github.com/blacklabelops/packercentos/blob/master/tutorials/versioningWithAtlas.md).
 
 ## References
 
