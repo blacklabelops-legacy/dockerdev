@@ -1,4 +1,4 @@
-# BlacklabelOps/DockerDev
+# BlackLabelOps/DockerDev
 
 Hello fellow Docker developer! This project contains a Vagrantfile for a Docker development environment. This box is a base image for my docker examples and installs the latest docker development tools, e.g. docker-compose.
 
