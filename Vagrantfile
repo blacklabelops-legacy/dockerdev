@@ -4,6 +4,7 @@
 Vagrant.configure(2) do |config|
 
   config.vm.box = "blacklabelops/centos"
+  config.vm.box_version = "1.0.3"
 
   config.vm.provider "virtualbox" do |vb|
   	# Display the VirtualBox GUI when booting the machine
@@ -14,6 +15,6 @@ Vagrant.configure(2) do |config|
   end
 
   config.vm.provision "shell", path: "scripts/installDocker.sh"
-  config.vm.provision "shell", path: "scripts/upgradeDocker.sh"
+  #config.vm.provision "shell", path: "scripts/upgradeDocker.sh"
   config.vm.provision "shell", path: "scripts/installDockerCompose.sh"
 end
