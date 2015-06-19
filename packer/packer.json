@@ -9,7 +9,7 @@
   		"headless": true,
   		"vm_name": "DockerDev",
   		"vboxmanage": [
-    		["modifyvm", "{{.Name}}", "--memory", "2048"],
+    		["modifyvm", "{{.Name}}", "--memory", "1024"],
     		["modifyvm", "{{.Name}}", "--cpus", "2"]
   		],
   		"shutdown_command": "echo 'packer' | sudo -S shutdown -P now"
@@ -18,7 +18,8 @@
   "provisioners": [
 		{
   			"type": "shell",
-  			"script": "packer/putInsecureKey.sh"
+  			"script": "packer/putInsecureKey.sh",
+        "script": "packer/cleanupImage.sh"
 		}
   ],
   "post-processors": [
