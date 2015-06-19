@@ -7,7 +7,7 @@
   		"ssh_password": "vagrant",
   		"ssh_wait_timeout": "10000s",
   		"headless": true,
-  		"vm_name": "DockerDev",
+      "guest_additions_mode": "disable",
   		"vboxmanage": [
     		["modifyvm", "{{.Name}}", "--memory", "1024"],
     		["modifyvm", "{{.Name}}", "--cpus", "2"]
@@ -18,8 +18,7 @@
   "provisioners": [
 		{
   			"type": "shell",
-  			"script": "packer/putInsecureKey.sh",
-        "script": "packer/cleanupImage.sh"
+  			"script": "packer/putInsecureKey.sh"
 		}
   ],
   "post-processors": [
