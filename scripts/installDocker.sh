@@ -6,9 +6,6 @@ chmod +x installDocker.sh
 sudo ./installDocker.sh
 rm -f installDocker.sh
 
-# Download and replace docker
-wget https://get.docker.com/builds/Linux/x86_64/docker-latest -O /usr/bin/docker
-
 # Docker User Group
 sudo groupadd docker
 sudo usermod -aG docker vagrant
