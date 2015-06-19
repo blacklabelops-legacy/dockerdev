@@ -17,5 +17,4 @@ Vagrant.configure(2) do |config|
   config.vm.provision "shell", path: "scripts/installDockerMachine.sh"
   config.vm.provision "shell", path: "scripts/installDocker.sh"
   config.vm.provision "shell", path: "scripts/installDockerCompose.sh"
-  config.vm.provision "shell", path: "scripts/cleanup.sh"
 end
