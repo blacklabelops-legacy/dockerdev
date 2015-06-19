@@ -17,13 +17,6 @@ $ vagrant init blacklabelops/dockerdev
 $ vagrant up
 ~~~~
 
-### Fix Version
-
-~~~~
-$ vagrant init blacklabelops/dockerdev https://atlas.hashicorp.com/blacklabelops/boxes/dockerdev/versions/!ATLAS_VERSION!
-$ vagrant up
-~~~~
-
 ## Fix Versions
 
 This is an example for using fix versions inside the Vagrantfile.
@@ -48,3 +41,7 @@ end
 ## Latest Version
 
 Github [BlackLabelOps/DockerDev](https://github.com/blacklabelops/dockerdev)
+
+## This Version
+
+Github [BlackLabelOps/DockerDev](https://github.com/blacklabelops/dockerdev/tree/!ATLAS_VERSION!)
