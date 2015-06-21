@@ -17,7 +17,7 @@ Features:
 Simply pull from Atlas and use the box!
 
 ~~~~
-$ vagrant init blacklabelops/dockerdev https://atlas.hashicorp.com/blacklabelops/boxes/dockerdev/versions/1.0.0.pre
+$ vagrant init blacklabelops/dockerdev
 ~~~~    
 
 Clone the code and build it yourself.
