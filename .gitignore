@@ -2,3 +2,4 @@
 .vagrant
 *.ovf
 *.vmdk
+*.tar
