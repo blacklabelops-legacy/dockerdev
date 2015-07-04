@@ -3,7 +3,7 @@
 
 Vagrant.configure(2) do |config|
 
-  config.vm.box = "blacklabelops/centos-1.0.5.pre"
+  config.vm.box = "blacklabelops/centos/1.0.5.pre"
   config.vm.box_url = "https://atlas.hashicorp.com/blacklabelops/boxes/centos/versions/1.0.5.pre/providers/virtualbox.box"
 
   config.vm.provider "virtualbox" do |vb|
