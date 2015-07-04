@@ -9,7 +9,7 @@ This is a Vagrant Box, never use it in Production!
 ## Try It
 
 ~~~~
-$ vagrant init blacklabelops/dockerdev-/!ATLAS_VERSION! https://atlas.hashicorp.com/blacklabelops/boxes/dockerdev/versions//!ATLAS_VERSION!/providers/virtualbox.box
+$ vagrant init blacklabelops/dockerdev/!ATLAS_VERSION! https://atlas.hashicorp.com/blacklabelops/boxes/dockerdev/versions/!ATLAS_VERSION!/providers/virtualbox.box
 $ vagrant up
 ~~~~
 
