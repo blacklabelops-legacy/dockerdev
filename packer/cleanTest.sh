@@ -17,3 +17,10 @@ if [ ! -z "$existent_box" ]; then
   echo "Removing test box."
   vagrant box remove -f testboxcentos
 fi
+
+# Remove possible existent box
+existent_box=$(vagrant box list | grep blacklabelops/centos/1.0.5.pre)
+if [ ! -z "$existent_box" ]; then
+  echo "Removing test box."
+  vagrant box remove -f testboxcentos
+fi
