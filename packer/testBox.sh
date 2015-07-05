@@ -6,12 +6,4 @@ set -o errexit    # abort script at first error
 readonly CUR_DIR=$(cd $(dirname ${BASH_SOURCE:-$0}); pwd)
 
 vagrant box add vagrant-dockerdev.box --name testboxcentos
-mkdir testbox
-cd testbox
-vagrant init testboxcentos
-vagrant up
-vagrant ssh -c 'echo Hello Testbox!'
-cd ..
-
-# Reading config
-source $CUR_DIR/cleanTest.sh
+mkdir testbox && cd testbox && vagrant init testboxcentos && vagrant up && vagrant ssh -c "echo Hello Testbox!" && cd ..
