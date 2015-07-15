@@ -19,8 +19,8 @@ if [ ! -z "$existent_box" ]; then
 fi
 
 # Remove possible existent box
-existent_box=$(vagrant box list | grep blacklabelops/dockerdev/1.0.5)
+existent_box=$(vagrant box list | grep blacklabelops/latestcentos)
 if [ ! -z "$existent_box" ]; then
-  echo "Removing test box."
-  vagrant box remove -f testboxcentos
+  echo "Removing centos test base box."
+  vagrant box remove -f blacklabelops/latestcentos
 fi
