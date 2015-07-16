@@ -7,7 +7,7 @@ Builds the [blacklabelops/dockerdev](https://atlas.hashicorp.com/blacklabelops/b
 Features:
 
 * Tested On: Packer 0.7.5, Vagrant 1.7.2, Virtualbox 4.3.28
-* Includes: CentOS 7.1, Docker Latest, Docker-Compose 1.3.0, Docker-Machine 0.3.0
+* Includes: CentOS 7.1, Docker Latest, Docker-Compose 1.3.2, Docker-Machine 0.3.0, Google Cloud SDK
 * Available as public Vagrant box on Atlas: [blacklabelops/dockerdev](https://atlas.hashicorp.com/blacklabelops/boxes/dockerdev)
 * Atlas Virtualbox provider is build daily!
 * This box can be redistributed! I use Packer to repackage it as a Vagrant box.
@@ -18,7 +18,7 @@ Simply pull from Atlas and use the box!
 
 ~~~~
 $ vagrant init blacklabelops/dockerdev
-~~~~    
+~~~~
 
 Clone the code and build it yourself.
 
@@ -26,7 +26,7 @@ Clone the code and build it yourself.
 $ git clone https://github.com/blacklabelops/packercentos.git
 $ vagrant up
 $ vagrant ssh
-~~~~    
+~~~~
 
 ## Redistribute The Box
 
@@ -37,25 +37,25 @@ I want to show you how to redistribute this box. In order to make sure, that you
 ~~~~
 $ vagrant destroy
 $ vagrant up
-~~~~    
+~~~~
 
 Now start the script that clones and exports the vm. The script evaluates the boxes Virtualbox Id and uses VBoxManage to clone and export the running vm.
 
 ~~~~
 $ ./packer/redistribute.sh
-~~~~    
+~~~~
 
 Afterwards I use Packer to replace the default Vagrant insecure key and repackage it as a Vagrant box.
 
 ~~~~
 $ packer build packer/packer.json
-~~~~ 
+~~~~
 
 Test the box before you spread it among your friends!
 
 ~~~~
 $ ./packer/testBox.sh
-~~~~ 
+~~~~
 
 Read the Atlas section on how to spread the box from the cloud!
 
@@ -70,5 +70,3 @@ This project includes scripts for uploading and managing the box on [Atlas](http
 * [Packer Homepage](https://www.packer.io/)
 * [Virtualbox Homepage](https://www.virtualbox.org/)
 * [Atlas Homepage](https://atlas.hashicorp.com/)
-
-
