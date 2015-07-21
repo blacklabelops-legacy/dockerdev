@@ -70,3 +70,7 @@ This project includes scripts for uploading and managing the box on [Atlas](http
 * [Packer Homepage](https://www.packer.io/)
 * [Virtualbox Homepage](https://www.virtualbox.org/)
 * [Atlas Homepage](https://atlas.hashicorp.com/)
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/blacklabelops/dockerdev/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
