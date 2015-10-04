@@ -6,8 +6,8 @@ Builds the [blacklabelops/dockerdev](https://atlas.hashicorp.com/blacklabelops/b
 
 Features:
 
-* Tested On: Packer 0.7.5, Vagrant 1.7.2, Virtualbox 4.3.28
-* Includes: CentOS 7.1, Docker Latest, Docker-Compose 1.3.2, Docker-Machine 0.3.0, Google Cloud SDK
+* Tested On: Packer, Vagrant, Virtualbox 5
+* Includes: CentOS 7.1, Docker Latest, Docker-Compose , Docker-Machine , Google Cloud SDK
 * Available as public Vagrant box on Atlas: [blacklabelops/dockerdev](https://atlas.hashicorp.com/blacklabelops/boxes/dockerdev)
 * Atlas Virtualbox provider is build daily!
 * This box can be redistributed! I use Packer to repackage it as a Vagrant box.
@@ -70,7 +70,3 @@ This project includes scripts for uploading and managing the box on [Atlas](http
 * [Packer Homepage](https://www.packer.io/)
 * [Virtualbox Homepage](https://www.virtualbox.org/)
 * [Atlas Homepage](https://atlas.hashicorp.com/)
-
-
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/blacklabelops/dockerdev/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
-
